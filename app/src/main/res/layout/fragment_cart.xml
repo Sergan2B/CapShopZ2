@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_close" />
+
+
+        <TextView
+            android:id="@+id/bucket_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Корзина"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_below="@id/close_btn"
+            android:id="@+id/idIVCourse"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/cap_pic" />
+
+        <!--text view for displaying course name-->
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bucket_tv"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_toRightOf="@id/idIVCourse"
+            android:text="New Era"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bucket_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idTVCourseName"
+            android:src="@drawable/ic_baseline_delete" />
+
+
+        <!--text view for displaying course tracks-->
+        <TextView
+            android:id="@+id/idTVCourseTracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_alignEnd="@id/delete_iv"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_toRightOf="@id/idIVCourse"
+            android:text="New Era
+Golden State Warriors Icon 59FIFTY Fitted Cap"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!--text view for displaying course duration-->
+        <TextView
+            android:id="@+id/idTVCourseDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseTracks"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_toRightOf="@id/idIVCourse"
+            android:text="2500 сом"
+            android:textColor="@color/mainYellow"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/size_btn"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:layout_below="@id/idTVCourseDuration"
+            android:text="s"
+            android:background="@drawable/border_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_below="@id/size_btn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mainGray"
+            />
+
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/summa_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_marginTop="10dp"
+            android:text="Сумма"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/numSum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_marginTop="10dp"
+            android:text="2750 сом"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summa_tv"
+            android:layout_marginTop="10dp"
+            android:text="Доставка"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/numOrder_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numSum_tv"
+            android:layout_marginTop="10dp"
+            android:text="250 сом"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buy_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/order_tv"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            android:backgroundTint="#FDDB16"
+            android:text="Купить"
+            app:cornerRadius="60dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

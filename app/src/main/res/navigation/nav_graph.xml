@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.spashScreen.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.registerScreen.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.loginScreen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/restoreFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.restoreScreen.RestoreFragment"
+        android:label="fragment_restore"
+        tools:layout="@layout/fragment_restore" />
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.catalogScreen.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.smsCodeScreen.smsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
+    <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.PasswordVerifyScreen.VerifyFragment"
+        android:label="fragment_verify"
+        tools:layout="@layout/fragment_verify" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.productScreen.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.detailScreen.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <dialog
+        android:id="@+id/cartFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.cartScreen.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.accountScreen.AccountFragment"
+        android:label="AccountFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.profileScreen.ProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        tools:layout="@layout/fragment_edit_profile"
+        android:name="com.example.capstorefinal.presentation.fragments.editProfileScreen.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/orderFragment"
+        tools:layout="@layout/fragment_order"
+        android:name="com.example.capstorefinal.presentation.fragments.orderScreen.OrderFragment"
+        android:label="OrderFragment" />
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.capstorefinal.presentation.fragments.orderDetail.OrderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail" />
+
+</navigation>

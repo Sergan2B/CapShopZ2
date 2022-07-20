@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+    >
+
+
+    <ImageView
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Войти"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainGray"
+        />
+
+    <LinearLayout
+        android:id="@+id/regis_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/number_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Номер"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/password_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:text="Еще не зарегистрированы?"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:text="Забыли пароль?"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="40dp"
+            android:orientation="vertical"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/register_tv"
+                android:layout_marginVertical="10dp"
+                android:text="Регистрация"
+                android:textColor="#2566AF"
+                android:textSize="14sp"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/restore_tv"
+                android:text="Восстановить"
+                android:textColor="#2566AF"
+                android:textSize="14sp"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/login_btn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="60dp"
+        android:layout_marginTop="80dp"
+        android:hint="Войти"
+        android:outlineProvider="bounds"
+        android:stateListAnimator="@null"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="или"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toStartOf="@id/tvText"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/tvText"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/facebook_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/facebook"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/google_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/facebook"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
