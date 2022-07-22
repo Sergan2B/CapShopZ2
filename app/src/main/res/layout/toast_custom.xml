@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_toast_container"
     android:orientation="horizontal"
-    android:layout_width="wrap_content"
+    android:layout_width="290dp"
     android:layout_height="48dp"
-    android:backgroundTint="@color/mainYellow">
+    android:backgroundTint="@color/yellow">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_gravity="center"
             android:src="@drawable/ic_baseline_check_circle_"
             android:layout_width="wrap_content"
@@ -28,8 +26,5 @@
             android:layout_height="wrap_content"
             android:textColor="#FFF"
             android:textSize="15sp" />
-
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

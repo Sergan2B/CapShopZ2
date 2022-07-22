@@ -3,80 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/boardFragment2">
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.spashScreen.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
+        android:id="@+id/boardFragment2"
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.BoardFragment"
+        android:label="BoardFragment" />
     <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.registerScreen.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        android:id="@+id/firstFragment2"
+        android:name="com.example.capstorefinal.presentation.ui.tabLayout.tabFragments.FirstFragment"
+        android:label="FirstFragment" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.capstorefinal.presentation.ui.tabLayout.tabFragments.FourthFragment"
+        android:label="FourthFragment" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.loginScreen.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.LoginFragment"
+        android:label="LoginFragment" />
     <fragment
-        android:id="@+id/restoreFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.restoreScreen.RestoreFragment"
-        android:label="fragment_restore"
-        tools:layout="@layout/fragment_restore" />
+        android:id="@+id/secondFragment2"
+        android:name="com.example.capstorefinal.presentation.ui.tabLayout.tabFragments.SecondFragment"
+        android:label="SecondFragment" />
     <fragment
-        android:id="@+id/catalogFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.catalogScreen.CatalogFragment"
-        android:label="fragment_catalog"
-        tools:layout="@layout/fragment_catalog" />
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.capstorefinal.presentation.ui.tabLayout.tabFragments.ThirdFragment"
+        android:label="ThirdFragment" />
     <fragment
-        android:id="@+id/smsFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.smsCodeScreen.smsFragment"
-        android:label="fragment_sms"
-        tools:layout="@layout/fragment_sms" />
+        android:id="@+id/cartFragment"
+        android:name="com.example.capstorefinal.presentation.ui.onceUse.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
     <fragment
-        android:id="@+id/verifyFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.restoreScreens.PasswordVerifyScreen.VerifyFragment"
-        android:label="fragment_verify"
-        tools:layout="@layout/fragment_verify" />
+        android:id="@+id/passwordResetFragment"
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.PasswordResetFragment"
+        android:label="fragment_password_reset"
+        tools:layout="@layout/fragment_0_password_reset" />
     <fragment
-        android:id="@+id/productFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.productScreen.ProductFragment"
-        android:label="fragment_product"
-        tools:layout="@layout/fragment_product" />
+        android:id="@+id/passwordResetCodeFragment"
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.PasswordResetCodeFragment"
+        android:label="fragment_password_reset_code"
+        tools:layout="@layout/fragment_0_password_reset_code" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_0_register" />
+    <fragment
+        android:id="@+id/sortFragment"
+        android:name="com.example.capstorefinal.presentation.ui.see.SortFragment"
+        android:label="fragment_sort"
+        tools:layout="@layout/fragment_sort" />
+    <fragment
+        android:id="@+id/passwordResetOkFragment"
+        android:name="com.example.capstorefinal.presentation.ui.rar.registerLoginReset.PasswordResetOkFragment"
+        android:label="fragment_0_password_reset_ok"
+        tools:layout="@layout/fragment_0_password_reset_ok" />
+    <fragment
+        android:id="@+id/userSetFragment1"
+        android:name="com.example.capstorefinal.presentation.ui.see.UserSetFragment1"
+        android:label="UserSetFragment1" />
+    <fragment
+        android:id="@+id/tabFragment"
+        android:name="com.example.capstorefinal.presentation.ui.tabLayout.TabFragment"
+        android:label="fragment_tab"
+        tools:layout="@layout/fragment_tab" />
+    <fragment
+        android:id="@+id/uniSelectFragment"
+        android:name="com.example.capstorefinal.presentation.ui.onceUse.UniSelectFragment"
+        android:label="fragment_uni_select"
+        tools:layout="@layout/fragment_uni_select" />
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.detailScreen.DetailFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
-    <dialog
-        android:id="@+id/cartFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.cartScreen.CartFragment"
-        android:label="CartFragment" />
-    <fragment
-        android:id="@+id/accountFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.accountScreen.AccountFragment"
-        android:label="AccountFragment" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.profileScreen.ProfileFragment"
-        android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_profile" />
-    <fragment
-        android:id="@+id/editProfileFragment"
-        tools:layout="@layout/fragment_edit_profile"
-        android:name="com.example.capstorefinal.presentation.fragments.editProfileScreen.EditProfileFragment"
-        android:label="EditProfileFragment" />
-    <fragment
-        android:id="@+id/orderFragment"
-        tools:layout="@layout/fragment_order"
-        android:name="com.example.capstorefinal.presentation.fragments.orderScreen.OrderFragment"
-        android:label="OrderFragment" />
-    <fragment
-        android:id="@+id/orderDetailFragment"
-        android:name="com.example.capstorefinal.presentation.fragments.orderDetail.OrderDetailFragment"
-        android:label="fragment_order_detail"
-        tools:layout="@layout/fragment_order_detail" />
-
+        android:name="com.example.capstorefinal.presentation.ui.onceUse.DetailFragment"
+        android:label="DetailFragment" />
 </navigation>

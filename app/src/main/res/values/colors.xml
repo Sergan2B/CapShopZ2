@@ -11,5 +11,23 @@
     <color name="mainYellow">#FDDB16</color>
     <color name="mainBlack">#12121D</color>
     <color name="mainGray">#F3F3F3</color>
-
+    <color name="black_text">#12121D</color>
+    <color name="white_other">#F3F3F3</color>
+    <color name="black_text_30">#4D12121D</color>
+    <color name="yellow">#FDDB16</color>
+    <color name="blue_cart_count_button">#EBF0FF</color>
+    <color name="blue_cart_count">#223263</color>
+    <color name="blue_oval_line">#6842FF</color>
+    <color name="black_text_10">#1A12121D</color>
+    <color name="custom_white">#FFFFFF</color>
+    <color name="custom_smoke_white">#F3F3F3</color>
+    <color name="custom_yellow">#FDDB16</color>
+    <color name="custom_black">#12121D</color>
+    <color name="custom_black_5percent">#0D12121D</color>
+    <color name="custom_black_30percent">#4D12121D</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="custom_gray_3">#565656</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="blue">#2566AF</color>
+    <color name="custom_white_70percent">#B3FFFFFF</color>
 </resources>
